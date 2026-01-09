@@ -380,7 +380,7 @@ export default function FitnessTracker() {
                   transition={{ delay: 0.2 + index * 0.1 }}
                 >
                   <CelebrationEffect message={encouragement}>
-                    <WorkoutCard workout={workout} />
+                    <WorkoutCard workout={workout} index={index} />
                   </CelebrationEffect>
                 </motion.div>
               );
@@ -525,6 +525,7 @@ export default function FitnessTracker() {
     </div>
   );
 }
+
 
 
 

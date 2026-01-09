@@ -9,8 +9,8 @@ export interface WorkoutStat {
 
 export interface Exercise {
   name: string;
-  sets: number;
-  reps: number;
+  sets?: number;
+  reps?: number;
   weight?: number;
   duration?: number;
   completed: boolean;
@@ -40,3 +40,4 @@ export interface ProgressData {
   workouts: number;
   calories: number;
 }
+
